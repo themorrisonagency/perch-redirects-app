@@ -1,0 +1,7 @@
+<perch:redirects id="title" type="text" label="Redirect Title" help="This is solely for admin purposes." required />
+<perch:redirects id="status" type="radio" label="Status" options="Enabled|enabled,Disabled|disabled,Scheduled|scheduled" default="enabled" divider-before="Enabled State" />
+<perch:redirects id="start_date" type="date" time label="Start Date" default="2019-01-01 00:00" />
+<perch:redirects id="end_date" type="date" time label="End Date" default="2019-01-01 00:00" />
+<perch:redirects id="pattern" type="text" label="Old URL" required placeholder="/example/old-url" divider-before="Redirect Settings" />
+<perch:redirects id="url" type="text" label="New URL" required placeholder="/example/redirect" />
+<perch:redirects id="code" type="select" label="Redirect Type" options="Permanent (301)|301,Temporary (302)|302" default="301"/>
