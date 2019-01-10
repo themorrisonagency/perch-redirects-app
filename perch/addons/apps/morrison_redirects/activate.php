@@ -17,6 +17,8 @@ $sql =
     PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;";
 
+$sql .= "ALTER TABLE `__PREFIX__redirects` ADD `dynamic_fields` TEXT DEFAULT NULL;";
+
 $sql = str_replace('__PREFIX__', PERCH_DB_PREFIX, $sql);
 
 $statements = explode(';', $sql);
