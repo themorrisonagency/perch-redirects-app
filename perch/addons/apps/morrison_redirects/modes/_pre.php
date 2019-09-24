@@ -22,6 +22,9 @@ if ($allRedirects == false) {
     $message = $HTML->warning_message('There are currently no redirects.');
 }
 
+// Attempt Updates if necessary
+$Redirects->update_app_version();
+
 PerchUI::set_subnav([
     [
         'page' => [

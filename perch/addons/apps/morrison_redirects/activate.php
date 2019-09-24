@@ -6,7 +6,7 @@ if (!defined('PERCH_DB_PREFIX')) {
 $sql =
 "CREATE TABLE IF NOT EXISTS `__PREFIX__redirects` (
     `id` INT(11) NOT NULL AUTO_INCREMENT,
-    `sort_order` INT(11) unsigned NOT NULL,
+    `sort_order` INT(11) unsigned NOT NULL DEFAULT 0,
     `title` VARCHAR(255) NOT NULL DEFAULT '',
     `status` VARCHAR(255) NOT NULL DEFAULT 'enabled',
     `start_date` DATETIME DEFAULT NULL,
